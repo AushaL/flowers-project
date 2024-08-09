@@ -81,5 +81,34 @@
       принято считать, элементы политического процесса рассмотрены исключительно
       в разрезе маркетинговых и финансовых предпосылок.
     </p>
+
+    <form action="https://echo.htmlacademy.ru" method="POST">
+      <h2>Регистрация</h2>
+      <label for="name">Логин</label>
+      <input id="name" typse="text" name="user-name" placeholder="Ваш логин" />
+      <label for="password">Пароль</label>
+      <input
+        id="password"
+        type="password"
+        name="user-password"
+        placeholder="Ваш пароль"
+      />
+      <!-- чекбокс с лейблом запомнить меня -->
+      <input type="radio" name="ice-cream" value="vanilla" checked />
+      <input type="radio" name="ice-cream" value="cocos" />
+
+      <label for="">Ванилька</label>
+      <input type="checkbox" name="ice-cream-second" value="vailla" checked />
+      <label for="">Шоколад</label>
+      <input type="checkbox" name="ice-cream-second" value="coocos" />
+
+      <select name="pizzas" multiple>
+        <option value=""></option>
+        <option value="pep" selected>пеперони</option>
+        <option value="fap">Дрочителла</option>
+        <option value="best">Гавайская</option>
+      </select>
+      <button>Отправить</button>
+    </form>
   </body>
 </html>
