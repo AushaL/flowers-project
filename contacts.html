@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Catalog</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Галерея</a></li>
+          <li><a href="#">О лаборатории</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <button></button>
+    </header>
+    <main>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <h2>Связаться с нами</h2>
+        <label for="name">Имя</label>
+        <input
+          id="name"
+          type="text"
+          name="user-name"
+          placeholder="Артём Косенко"
+        />
+        <label for="mail">Почта</label>
+        <input
+          id="mail"
+          type="email"
+          name="user-mail"
+          placeholder="mail@gmail.com"
+        />
+        <label for="phone">Телефон</label>
+        <input
+          id="phone"
+          type="phone"
+          name="user-phone"
+          placeholder="375291234567"
+        />
+        <label for="message">Сообщение</label>
+        <textarea
+          name="user-message"
+          id="message"
+          placeholder="Ваше сообщение"
+        ></textarea>
+        <label for="permission"
+          >Я принимаю условия пользователького соглашения</label
+        >
+        <input
+          type="checkbox"
+          id="permission"
+          name="permission"
+          value="yes"
+          checked
+          required
+        />
+        <button>Отправить</button>
+      </form>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="#">Youtube</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">X</a></li>
+      </ul>
+      <p>f&b ® 2020</p>
+    </footer>
+  </body>
+</html>
