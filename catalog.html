@@ -3,51 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <title>Catalog</title>
   </head>
   <body>
-    <form action="https://echo.htmlacademy.ru">
-      <!-- select по убыванию цены размеру и тд
-        группа чекбоксов букет композиция моно
-        группа радиокнопок самовывоз доставка -->
-    </form>
-    <ul>
-      <li>
-        <img src="" alt="Цветок" />
-        <h3>Fig. 1 (plant)</h3>
-        <p>
-          Имеется спорная точка зрения, гласящая примерно следующее: активно
-          развивающиеся страны третьего мира своевременно верифицированы.
-        </p>
-        <a href="#">Подробнее</a>
-      </li>
-      <li>
-        <img src="" alt="Цветок" />
-        <h3>Fig. 2 (flower)</h3>
-        <p>
-          Прежде всего, синтетическое тестирование влечет за собой процесс
-          внедрения и модернизации условий.
-        </p>
-        <a href="#">Подробнее</a>
-      </li>
-      <li>
-        <img src="" alt="Цветок" />
-        <h3>Fig. 3 (leaf)</h3>
-        <p>
-          Лишь непосредственные участники прогресса неоднозначны и будут в
-          равной степени предоставлены сами себе для работы.
-        </p>
-        <a href="#">Подробнее</a>
-      </li>
-      <li>
-        <img src="" alt="Цветок" />
-        <h3>Fig. 4 (wood)</h3>
-        <p>
-          Базовый вектор развития не даёт нам иного выбора, кроме определения
-          новых предложений.
-        </p>
-        <a href="#">Подробнее</a>
-      </li>
-    </ul>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Галерея</a></li>
+          <li><a href="#">О лаборатории</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <button></button>
+    </header>
+    <main>
+      <form action="https://echo.htmlacademy.ru">
+        <label for="price-sort">Сортировать</label>
+        <select name="price-sort" id="price-sort">
+          <option value="decrease">По убыванию</option>
+          <option value="increase" selected>По возрастанию</option>
+          <option value="popularity">По популярности</option>
+        </select>
+        <label for="bouquets">Букеты</label>
+        <input type="checkbox" name="type" id="bouquets" value="bouquets" />
+        <label for="arrangements">Композиции в корзине</label>
+        <input
+          type="checkbox"
+          name="type"
+          id="arrangements"
+          value="arrangements"
+        />
+        <label for="mono">Монобукеты</label>
+        <input type="checkbox" name="type" id="mono" value="mono" />
+        <label for="delivery">Доставка</label>
+        <input
+          type="radio"
+          name="delivery-type"
+          id="delivery"
+          value="delivery"
+        />
+        <label for="pickup">Самовывоз</label>
+        <input type="radio" name="delivery-type" id="pickup" value="pickup" />
+      </form>
+      <ul>
+        <li>
+          <img src="" alt="Цветок" />
+          <h3>Fig. 1 (plant)</h3>
+          <p>
+            Имеется спорная точка зрения, гласящая примерно следующее: активно
+            развивающиеся страны третьего мира своевременно верифицированы.
+          </p>
+          <a href="#">Подробнее</a>
+        </li>
+        <li>
+          <img src="" alt="Цветок" />
+          <h3>Fig. 2 (flower)</h3>
+          <p>
+            Прежде всего, синтетическое тестирование влечет за собой процесс
+            внедрения и модернизации условий.
+          </p>
+          <a href="#">Подробнее</a>
+        </li>
+        <li>
+          <img src="" alt="Цветок" />
+          <h3>Fig. 3 (leaf)</h3>
+          <p>
+            Лишь непосредственные участники прогресса неоднозначны и будут в
+            равной степени предоставлены сами себе для работы.
+          </p>
+          <a href="#">Подробнее</a>
+        </li>
+        <li>
+          <img src="" alt="Цветок" />
+          <h3>Fig. 4 (wood)</h3>
+          <p>
+            Базовый вектор развития не даёт нам иного выбора, кроме определения
+            новых предложений.
+          </p>
+          <a href="#">Подробнее</a>
+        </li>
+      </ul>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="#">Youtube</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">X</a></li>
+      </ul>
+      <p>f&b ® 2020</p>
+    </footer>
   </body>
 </html>
