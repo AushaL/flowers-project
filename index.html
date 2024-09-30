@@ -3,199 +3,241 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/css/styles.css" />
     <title>Main</title>
   </head>
   <body>
     <header>
-      <nav>
-        <img src="/img/icons/logo-main.svg" alt="main-logo" />
-        <ul>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Галерея</a></li>
-          <li><a href="#">О лаборатории</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
-      <button></button>
+      <div class="container">
+        <nav>
+          <img class="logo" src="/img/icons/logo-main.svg" alt="main-logo" />
+          <ul>
+            <li><a class="nav-link" href="#">Каталог</a></li>
+            <li><a class="nav-link" href="#">Галерея</a></li>
+            <li><a class="nav-link" href="#">О лаборатории</a></li>
+            <li><a class="nav-link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <button></button>
+      </div>
     </header>
     <main>
-      <section>
-        <h1>Крупнейшая коллекция природных артефактов</h1>
-        <p>
-          которые представляют собой яркий пример европейского типа политической
-          и социальной культуры.
-        </p>
-        <a href="#">Исследовать</a>
+      <section class="hero">
+        <div class="container">
+          <h1 class="main-title font-alt">
+            Крупнейшая коллекция природных артефактов
+          </h1>
+          <p class="title-desc">
+            Являясь всего лишь частью общей картины, интерактивные прототипы,
+            которые представляют собой яркий пример европейского типа
+            политической и социальной культуры.
+          </p>
+          <a class="explore-link" href="#">Исследовать</a>
+        </div>
       </section>
-      <section>
-        <h2></h2>
-        <ul>
-          <li>
-            <img
-              src="/img/pictures/section2/plant.png"
-              alt="Цветок"
-              width="223"
-              height="120"
-            />
-            <h3>Fig. 1 (plant)</h3>
-            <p>
-              Имеется спорная точка зрения, гласящая примерно следующее: активно
-              развивающиеся страны третьего мира своевременно верифицированы.
-            </p>
-            <a href="#">Подробнее</a>
-          </li>
-          <li>
-            <img
-              src="/img/pictures/section2/fl.png"
-              alt="Цветок"
-              width="197"
-              height="120"
-            />
-            <h3>Fig. 2 (flower)</h3>
-            <p>
-              Прежде всего, синтетическое тестирование влечет за собой процесс
-              внедрения и модернизации условий.
-            </p>
-            <a href="#">Подробнее</a>
-          </li>
-          <li>
-            <img
-              src="/img/pictures/section2/leaf.png"
-              alt="Цветок"
-              width="204"
-              height="120"
-            />
-            <h3>Fig. 3 (leaf)</h3>
-            <p>
-              Лишь непосредственные участники прогресса неоднозначны и будут в
-              равной степени предоставлены сами себе для работы.
-            </p>
-            <a href="#">Подробнее</a>
-          </li>
-          <li>
-            <img
-              src="/img/pictures/section2/wood.png"
-              alt="Цветок"
-              width="226"
-              height="120"
-            />
-            <h3>Fig. 4 (wood)</h3>
-            <p>
-              Базовый вектор развития не даёт нам иного выбора, кроме
-              определения новых предложений.
-            </p>
-            <a href="#">Подробнее</a>
-          </li>
-        </ul>
+      <section class="item-section">
+        <div class="container">
+          <h2></h2>
+          <ul>
+            <li>
+              <img
+                class="item-photo"
+                src="/img/pictures/section2/plant.png"
+                alt="Цветок"
+                width="223"
+                height="120"
+              />
+              <h3 class="item-heading font-alt">Fig. 1 (plant)</h3>
+              <p class="item-desc plant-desc">
+                Имеется спорная точка зрения, гласящая примерно следующее:
+                активно развивающиеся страны третьего мира своевременно
+                верифицированы.
+              </p>
+              <a class="item-button" href="#">Подробнее</a>
+            </li>
+            <li>
+              <img
+                class="item-photo"
+                src="/img/pictures/section2/fl.png"
+                alt="Цветок"
+                width="197"
+                height="120"
+              />
+              <h3 class="item-heading font-alt">Fig. 2 (flower)</h3>
+              <p class="item-desc flower-desc">
+                Прежде всего, синтетическое тестирование влечет за собой процесс
+                внедрения и модернизации условий.
+              </p>
+              <a class="item-button" href="#">Подробнее</a>
+            </li>
+            <li>
+              <img
+                class="item-photo"
+                src="/img/pictures/section2/leaf.png"
+                alt="Цветок"
+                width="204"
+                height="120"
+              />
+              <h3 class="item-heading font-alt">Fig. 3 (leaf)</h3>
+              <p class="item-desc leaf-desc">
+                Лишь непосредственные участники прогресса неоднозначны и будут в
+                равной степени предоставлены сами себе для работы.
+              </p>
+              <a class="item-button" href="#">Подробнее</a>
+            </li>
+            <li>
+              <img
+                class="item-photo"
+                src="/img/pictures/section2/wood.png"
+                alt="Цветок"
+                width="226"
+                height="120"
+              />
+              <h3 class="item-heading font-alt">Fig. 4 (wood)</h3>
+              <p class="item-desc wood-desc">
+                Базовый вектор развития не даёт нам иного выбора, кроме
+                определения новых предложений.
+              </p>
+              <a class="item-button" href="#">Подробнее</a>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section>
-        <h2>Новые артефакты</h2>
-        <img src="/img/pictures/section-3.jpg" width="1110px" height="571px" />
-        <h3>Kurische Nehrung 24</h3>
-        <p>
-          Вот вам яркий пример современных тенденций - начало повседневной
-          работы по формированию позиции выявляет срочную потребность методов
-          управления процессами.
-        </p>
-        <p>
-          Есть над чем задуматься: представители современных социальных резервов
-          своевременно верифицированы.
-        </p>
-        <a href="#">Читать далее</a>
+      <section class="artefact-section">
+        <div class="container">
+          <h2 class="section-title font-alt">Новые артефакты</h2>
+          <img
+            src="/img/pictures/section-3.jpg"
+            width="1110px"
+            height="571px"
+          />
+          <h3 class="item-heading font-alt">Kurische Nehrung 24</h3>
+          <p class="artefact-desc">
+            Вот вам яркий пример современных тенденций - начало повседневной
+            работы по формированию позиции выявляет срочную потребность методов
+            управления процессами. <br />
+            Есть над чем задуматься: представители современных социальных
+            резервов своевременно верифицированы.
+          </p>
+          <a class="explore-link" href="#">Читать далее</a>
+        </div>
       </section>
-      <section>
-        <blockquote>Розы любят воду, пацаны свободу.</blockquote>
-        <cite>Хаяо Миядзаки|20 июля, 2024</cite>
-        <time datetime="2024-07-20"></time>
-        <h2>
-          Мафик - Розы гибнут на газонах, а шпана на красных зонах (ПЕСНЯ)
-        </h2>
+      <section class="cite-section">
+        <div class="container">
+          <blockquote>Розы любят воду, пацаны свободу.</blockquote>
+          <cite class="font-alt">Хаяо Миядзаки|20 июля, 2024</cite>
+          <time datetime="2024-07-20"></time>
+          <h2 class="mafik">
+            Мафик - Розы гибнут на газонах, а шпана на красных зонах (ПЕСНЯ)
+          </h2>
+        </div>
       </section>
-      <section>
-        <h2>Помочь проекту</h2>
-        <p>
-          Равным образом, экономическая повестка сегодняшнего дня не даёт нам
-          иного выбора, кроме определения прогресса профессионального
-          сообщества. Как принято считать, элементы политического процесса
-          рассмотрены исключительно в разрезе маркетинговых и финансовых
-          предпосылок.
-        </p>
+      <section class="help-section">
+        <div class="container">
+          <h2 class="section-title font-alt">Помочь проекту</h2>
+          <p class="help-desc">
+            Равным образом, экономическая повестка сегодняшнего дня не даёт нам
+            иного выбора, кроме определения прогресса профессионального
+            сообщества. Как принято считать, элементы политического процесса
+            рассмотрены исключительно в разрезе маркетинговых и финансовых
+            предпосылок.
+          </p>
+          <form action="https://echo.htmlacademy.ru"></form>
+        </div>
       </section>
 
-      <section>
-        <form action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset>
-            <h2>Регистрация</h2>
-            <label for="name">Логин</label>
-            <input
-              id="name"
-              typse="text"
-              name="user-name"
-              placeholder="Ваш логин"
-            />
-            <label for="password">Пароль</label>
-            <input
-              id="password"
-              type="password"
-              name="user-password"
-              placeholder="Ваш пароль"
-            />
-          </fieldset>
-          <fieldset>
-            <legend>Мороженое</legend>
-            <label for="vanilla">Ваниль</label>
-            <input
-              type="radio"
-              id="vanilla"
-              name="ice-cream"
-              value="vanilla"
-              checked
-            />
-            <label for="cocos">Кокос</label>
-            <input type="radio" id="cocos" name="ice-cream" value="cocos" />
-          </fieldset>
-          <fieldset>
-            <label for="strawberry">Клубника</label>
-            <input
-              type="checkbox"
-              id="strawberry"
-              name="ice-cream-second"
-              value="strawberry"
-              checked
-            />
-            <label for="choko">Шоколад</label>
-            <input
-              type="checkbox"
-              id="choko"
-              name="ice-cream-second"
-              value="choko"
-            />
-          </fieldset>
-          <fieldset>
-            <legend>Пицца</legend>
-            <select name="pizzas" multiple>
-              <option value="pep" selected>Пеперони</option>
-              <option value="fap">Дрочателла</option>
-              <option value="best">Гавайская</option>
-            </select>
-          </fieldset>
-          <button>Отправить</button>
-        </form>
+      <section class="registration">
+        <div class="container">
+          <form action="https://echo.htmlacademy.ru" method="POST">
+            <fieldset>
+              <h2 class="section-title font-alt">Регистрация</h2>
+              <label for="name">Логин</label>
+              <input
+                id="name"
+                typse="text"
+                name="user-name"
+                placeholder="Ваш логин"
+              />
+              <label for="password">Пароль</label>
+              <input
+                id="password"
+                type="password"
+                name="user-password"
+                placeholder="Ваш пароль"
+              />
+            </fieldset>
+            <fieldset>
+              <legend>Мороженое</legend>
+              <label for="vanilla">Ваниль</label>
+              <input
+                type="radio"
+                id="vanilla"
+                name="ice-cream"
+                value="vanilla"
+                checked
+              />
+              <label for="cocos">Кокос</label>
+              <input type="radio" id="cocos" name="ice-cream" value="cocos" />
+            </fieldset>
+            <fieldset>
+              <label for="strawberry">Клубника</label>
+              <input
+                type="checkbox"
+                id="strawberry"
+                name="ice-cream-second"
+                value="strawberry"
+                checked
+              />
+              <label for="choko">Шоколад</label>
+              <input
+                type="checkbox"
+                id="choko"
+                name="ice-cream-second"
+                value="choko"
+              />
+            </fieldset>
+            <fieldset>
+              <legend>Пицца</legend>
+              <select name="pizzas" multiple>
+                <option value="pep" selected>Пеперони</option>
+                <option value="fap">Дрочателла</option>
+                <option value="best">Гавайская</option>
+              </select>
+            </fieldset>
+            <button>Отправить</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer>
-      <ul>
-        <img src="/img/icons/socials/yt.svg" alt="" />
-        <li><a href="#">Youtube</a></li>
-        <img src="/img/icons/socials/inst.svg" alt="" />
-        <li><a href="#">Instagram</a></li>
-        <img src="/img/icons/socials/fb.svg" alt="" />
-        <li><a href="#">Facebook</a></li>
-        <img src="/img/icons/socials/x.svg" alt="" />
-        <li><a href="#">X</a></li>
-      </ul>
-      <p>f&b ® 2020</p>
+      <div class="container">
+        <ul>
+          <li>
+            <a href="#"><img src="/img/icons/socials/yt.svg" alt="" /></a>
+          </li>
+
+          <li>
+            <a href="#"><img src="/img/icons/socials/inst.svg" alt="" /></a>
+          </li>
+
+          <li>
+            <a href="#"><img src="/img/icons/socials/fb.svg" alt="" /></a>
+          </li>
+
+          <li>
+            <a href="#"><img src="/img/icons/socials/x.svg" alt="" /></a>
+          </li>
+        </ul>
+        <p>f&b ® 2020</p>
+      </div>
     </footer>
   </body>
 </html>
