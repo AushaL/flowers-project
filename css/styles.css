@@ -153,12 +153,23 @@ a {
   color: var(--white-color);
 }
 .hero {
+  background-image: url("../img/pictures/section-1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
   padding-top: 115px;
   padding-bottom: 115px;
   margin-bottom: 60px;
 }
 .item-section {
   margin-bottom: 57px;
+}
+.item-section-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+}
+.item-section-item {
+  border: 1px solid #0b1919;
 }
 .item-photo {
   margin-bottom: 16px;
@@ -185,6 +196,11 @@ a {
 }
 .artefact-section .section-title {
   margin-bottom: 30px;
+}
+.artefact-promo {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 30px;
 }
 .cite-section {
   margin-bottom: 60px;
