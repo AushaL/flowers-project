@@ -15,33 +15,35 @@
     <title>Main</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <nav>
+        <nav class="header-nav">
           <img class="logo" src="/img/icons/logo-main.svg" alt="main-logo" />
-          <ul>
+          <ul class="header-nav-list">
             <li><a class="nav-link" href="#">Каталог</a></li>
             <li><a class="nav-link" href="#">Галерея</a></li>
             <li><a class="nav-link" href="#">О лаборатории</a></li>
             <li><a class="nav-link" href="#">Контакты</a></li>
           </ul>
+          <div class="header-controls">
+            <button class="search-button">
+              <img
+                src="/img/icons/search.svg"
+                alt="search icon"
+                width="24"
+                height="24"
+              />
+            </button>
+            <button class="log-in-button">
+              <img
+                src="/img/icons/log-in.svg"
+                alt="log in icon"
+                width="24"
+                height="24"
+              />
+            </button>
+          </div>
         </nav>
-        <button>
-          <img
-            src="/img/icons/search.svg"
-            alt="search icon"
-            width="24"
-            height="24"
-          />
-        </button>
-        <button>
-          <img
-            src="/img/icons/log-in.svg"
-            alt="log in icon"
-            width="24"
-            height="24"
-          />
-        </button>
       </div>
     </header>
     <main>
@@ -70,13 +72,15 @@
                 width="223"
                 height="120"
               />
-              <h3 class="item-heading font-alt">Fig. 1 (plant)</h3>
-              <p class="item-desc plant-desc">
-                Имеется спорная точка зрения, гласящая примерно следующее:
-                активно развивающиеся страны третьего мира своевременно
-                верифицированы.
-              </p>
-              <a class="item-button" href="#">Подробнее</a>
+              <div class="item-content">
+                <h3 class="item-heading font-alt">Fig. 1 (plant)</h3>
+                <p class="item-desc plant-desc">
+                  Имеется спорная точка зрения, гласящая примерно следующее:
+                  активно развивающиеся страны третьего мира своевременно
+                  верифицированы.
+                </p>
+                <a class="item-button" href="#">Подробнее</a>
+              </div>
             </li>
             <li class="item-section-item">
               <img
@@ -86,12 +90,14 @@
                 width="197"
                 height="120"
               />
-              <h3 class="item-heading font-alt">Fig. 2 (flower)</h3>
-              <p class="item-desc flower-desc">
-                Прежде всего, синтетическое тестирование влечет за собой процесс
-                внедрения и модернизации условий.
-              </p>
-              <a class="item-button" href="#">Подробнее</a>
+              <div class="item-content">
+                <h3 class="item-heading font-alt">Fig. 2 (flower)</h3>
+                <p class="item-desc flower-desc">
+                  Прежде всего, синтетическое тестирование влечет за собой
+                  процесс внедрения и модернизации условий.
+                </p>
+                <a class="item-button" href="#">Подробнее</a>
+              </div>
             </li>
             <li class="item-section-item">
               <img
@@ -101,12 +107,14 @@
                 width="204"
                 height="120"
               />
-              <h3 class="item-heading font-alt">Fig. 3 (leaf)</h3>
-              <p class="item-desc leaf-desc">
-                Лишь непосредственные участники прогресса неоднозначны и будут в
-                равной степени предоставлены сами себе для работы.
-              </p>
-              <a class="item-button" href="#">Подробнее</a>
+              <div class="item-content">
+                <h3 class="item-heading font-alt">Fig. 3 (leaf)</h3>
+                <p class="item-desc leaf-desc">
+                  Лишь непосредственные участники прогресса неоднозначны и будут
+                  в равной степени предоставлены сами себе для работы.
+                </p>
+                <a class="item-button" href="#">Подробнее</a>
+              </div>
             </li>
             <li class="item-section-item">
               <img
@@ -116,12 +124,14 @@
                 width="226"
                 height="120"
               />
-              <h3 class="item-heading font-alt">Fig. 4 (wood)</h3>
-              <p class="item-desc wood-desc">
-                Базовый вектор развития не даёт нам иного выбора, кроме
-                определения новых предложений.
-              </p>
-              <a class="item-button" href="#">Подробнее</a>
+              <div class="item-content">
+                <h3 class="item-heading font-alt">Fig. 4 (wood)</h3>
+                <p class="item-desc wood-desc">
+                  Базовый вектор развития не даёт нам иного выбора, кроме
+                  определения новых предложений.
+                </p>
+                <a class="item-button" href="#">Подробнее</a>
+              </div>
             </li>
           </ul>
         </div>
@@ -238,9 +248,9 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <ul>
+        <ul class="footer-socials">
           <li>
             <a href="#"><img src="/img/icons/socials/yt.svg" alt="" /></a>
           </li>
@@ -257,7 +267,7 @@
             <a href="#"><img src="/img/icons/socials/x.svg" alt="" /></a>
           </li>
         </ul>
-        <p>f&b ® 2020</p>
+        <p class="footer-copyright">f&b ® 2020</p>
       </div>
     </footer>
   </body>

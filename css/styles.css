@@ -5,6 +5,7 @@
   --grey-color: #899d9d;
   --green-color: #bae249;
   --main-bg-color: #1d2f30;
+
   /* Fonts */
   --main-font-family: "Open Sans", sans-serif;
   --secondary-font-family: "Cormorant", serif;
@@ -152,10 +153,39 @@ a {
   line-height: 24px;
   color: var(--white-color);
 }
+/* Header */
+.header {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background-color: var(--main-bg-color);
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-nav .logo {
+  margin-right: auto;
+}
+.logo {
+  margin-right: 125px;
+}
+.header-nav-list {
+  display: flex;
+  column-gap: 74px;
+  margin-right: 74px;
+}
+.header-controls {
+  display: flex;
+  column-gap: 67px;
+}
+.item-content {
+  padding: 16px 16px 24px 16px;
+}
+
 .hero {
-  background-image: url("../img/pictures/section-1.jpg");
+  /* background-image: url("../img/pictures/section-1.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100%; */
   padding-top: 115px;
   padding-bottom: 115px;
   margin-bottom: 60px;
@@ -248,14 +278,26 @@ a {
 .mafik {
   margin-top: 24px;
 }
+.help-section {
+  padding-top: 60px;
+}
 .help-section .section-title {
   margin-bottom: 16px;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 .help-desc {
   margin-bottom: 24px;
 }
 .registration .section-title {
   margin-bottom: 24px;
+}
+/* Footer */
+.footer-socials {
+  display: flex;
+  width: 186px;
+  margin: 0 auto;
+  column-gap: 32px;
+}
+.footer-copyright {
+  text-align: center;
+  color: var(--grey-color);
 }
